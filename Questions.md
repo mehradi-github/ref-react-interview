@@ -36,3 +36,9 @@ Shadow host: The regular DOM node that the shadow DOM is attached to.
 Shadow tree: The DOM tree inside the shadow DOM.
 Shadow boundary: the place where the shadow DOM ends, and the regular DOM begins.
 Shadow root: The root node of the shadow tree.
+
+5. what is JSX?
+   JSX is a syntax extension for JavaScript that lets you write HTML-like markup inside a JavaScript file.
+6. what is presentational(dumb) va container(smart) component?
+   Container Components: Components that care about what data is shown to the user.
+   Presentational Components: Components that care about how data is shown to the user.
