@@ -42,3 +42,6 @@ Shadow root: The root node of the shadow tree.
 6. what is presentational(dumb) va container(smart) component?
    Container Components: Components that care about what data is shown to the user.
    Presentational Components: Components that care about how data is shown to the user.
+7. What are React portals?
+   A Guide to React Portals - Semaphore
+   React Portals are a powerful feature in React that allows you to render components outside the current React tree hierarchy. With portals, you can easily render elements into different parts of the DOM, such as modals, tooltips, or any other component that needs to break out of the component's container.
