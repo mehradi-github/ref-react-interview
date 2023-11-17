@@ -13,19 +13,19 @@ const CheckMemo = () => {
         Address{": "}
         <input value={address} onChange={(e) => setAddress(e.target.value)} />
       </label>
-      <Greeting name={name} />
+      {/* <Greeting name={name} /> */}
     </>
   );
 };
 
-const Greeting = memo(function Greeting({ name }) {
-  console.log("Greeting was rendered at", new Date().toLocaleTimeString());
-  return (
-    <h3>
-      Hello{name && ", "}
-      {name}!
-    </h3>
-  );
-});
+// const Greeting = memo(function Greeting({ name }) {
+//   console.log("Greeting was rendered at", new Date().toLocaleTimeString());
+//   return (
+//     <h3>
+//       Hello{name && ", "}
+//       {name}!
+//     </h3>
+//   );
+// });
 
 export default CheckMemo;
