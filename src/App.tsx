@@ -4,6 +4,7 @@ import Layout from "./Layout";
 import MyForm from "./MyForm";
 import Dashboard from "./Dashboard";
 import Auth from "./Auth";
+import Signup from "./Signup";
 
 const About = lazy(() => import("./About"));
 
@@ -15,6 +16,8 @@ const App: FC = () => {
       <Link to="/about">About</Link>
       <br />
       <Link to="/myform">MyForm</Link>
+      <br />
+      <Link to="/singup">SignUp</Link>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Dashboard />} />
@@ -26,6 +29,7 @@ const App: FC = () => {
               </Auth>
             }
           />
+          <Route path="/singup" element={<Signup />} />
           <Route
             path="/about"
             element={
