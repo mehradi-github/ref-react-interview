@@ -1,4 +1,4 @@
-import React, { FC, Suspense, lazy } from "react";
+import React, { FC, Suspense, lazy, useReducer } from "react";
 import { Link, Route, Routes } from "react-router-dom";
 import Layout from "./Layout";
 import MyForm from "./MyForm";
@@ -9,6 +9,7 @@ import Signup from "./Signup";
 const About = lazy(() => import("./About"));
 
 const App: FC = () => {
+  const [, forceUpdate] = useReducer((x) => x + 1, 0);
   return (
     <div>
       <Link to="/">Dashboard</Link>
@@ -41,6 +42,7 @@ const App: FC = () => {
         </Route>
         <Route path="*" element={<div>404</div>} />
       </Routes>
+      <button onClick={() => forceUpdate()}>Force update</button>
     </div>
   );
 };
